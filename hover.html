@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display:none;
+        }
+        .descendent:hover > p,
+        .child:hover > p,
+        .adjacent:hover > p,
+        .general:hover > p{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinators</h1>
+    <div class="descendent">
+        <h2>Descendent selectors</h2>
+        <p><i>These selectors are used to select all elements and  apply elements of the block level element (whole div tag) , this descendent selector is indicated by using space (  ) </i></p>
+    </div>
+    <div class="child">
+        <h2>Child selectors</h2>
+        <p><i>the  child selectors are used to select only the child elements of the container or div tag that we have took in our css , this child selector is indicated by using greater than symbol (>)</i></p>
+    </div>
+    <div class="adjacent">
+        <h2>Adjacent sibling selectors</h2>
+        <p><i>The Adjacent sibling selector are used to select and apply styles to the block level element which is very next to the element that we took in our css, This Adjacent sibling selector is indicated by using the plus symbol (+)</i></p>
+    </div>
+    <div class="general">
+        <h2>General Sibling Selector</h2>
+        <p><i>The General Sibling selector is used to select and apply styles to all the child elements that are after  to the block level element to which we took in our css, The general sibling selector is indicated by using the symbol tilt (~)</i></p>
+    </div>
+</body>
+</html>
