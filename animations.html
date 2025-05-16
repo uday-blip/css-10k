@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        .equilaizer{
+            height:200px;
+            background-color: beige;
+            display:flex;
+            align-items:flex-end;
+            gap:5px;
+            padding:p5x;
+
+        }
+        .bar{
+            height: 200px;
+            width:80px;
+            animation-name:sound;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function:ease-in-out;
+        }
+        .bar1{
+            animation-delay:0.1s;
+            height: 40px;
+            background-color: aqua;
+        }
+        .bar2{
+            animation-delay: 0.3s;
+            height:90px;
+            background-color: brown;
+        }
+        .bar3{
+            animation-delay:0.1s;
+            height:60px;
+            background-color: black;
+        }
+        .bar4{
+            animation-delay:0.3s;
+            height:80px;
+            background-color:green;
+        }
+        .bar5{
+            animation-delay:0.2s;
+            height:20px;
+            background-color: deeppink;
+        }
+        .bar6{
+            animation-delay:0.5s;
+            height:40px;
+            background-color: darkolivegreen;
+        }
+        .bar7{
+            animation-delay:0.2s;
+            height:30px;
+            background-color:darkblue;
+        }
+        .bar8{
+            background-color: greenyellow;
+            animation-delay:0.4s;
+            height:70px;
+        }
+        .bar9{
+            background-color: coral;
+            animation-delay:0.2s;
+            height: 20px;
+        }
+        @keyframes sound{
+             0%{
+                height: 20px;
+             }
+             20%{
+                height:70px;
+             }
+             40%{
+                height:30px;
+             }
+             60%{
+                height:100px;
+             }
+             80%{
+                height:90px;
+             }
+             100%{
+                height:20px;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="equilaizer">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+    <div class="bar bar4"></div>
+    <div class="bar bar5"></div>
+    <div class="bar bar6"></div>
+    <div class="bar bar7"></div>
+    <div class="bar bar8"></div>
+    <div class="bar bar9"></div>
+    </div>
+</body>
+</html>
